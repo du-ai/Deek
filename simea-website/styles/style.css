@@ -1,12 +1,15 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff;
+    background: linear-gradient(135deg, #2C3E50, #34495E); /* Gradient background */
 }
 
+/* Header Section */
 header {
-    background: #2C3E50;
+    background: rgba(44, 62, 80, 0.8); /* Transparent dark header */
     color: #fff;
     padding: 1rem 0;
 }
@@ -31,6 +34,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 #hero {
     background: url('../images/background-top.png.png') no-repeat center center/cover;
     color: #fff;
@@ -68,25 +72,78 @@ header nav ul li a {
     background: #e67e22;
 }
 
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(44, 62, 80, 0.9); /* Dark overlay */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #bbb;
+}
+
+/* Products Section */
 #products {
-    background: #f4f4f4;
+    background: #34495E; /* Dark background for products section */
     padding: 2rem 0;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     padding: 0 2rem;
+    justify-items: center;
 }
 
 .product {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparent white background */
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds frosted glass effect */
 }
 
+.product h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Disclaimer Section */
+#disclaimer {
+    padding: 2rem 0;
+    background: #2C3E50;
+    color: #fff;
+    text-align: center;
+}
+
+#disclaimer p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Footer Section */
 footer {
     background: #2C3E50;
     color: #fff;
