@@ -32,20 +32,40 @@ header nav ul li a {
 }
 
 #hero {
-    background: #3498DB;
+    background: url('../images/background-top.png.png') no-repeat center center/cover;
     color: #fff;
     padding: 4rem 2rem;
     text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 #hero .btn {
-    background: #1ABC9C;
+    background: #f39c12;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1rem;
-    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#hero .btn:hover {
+    background: #e67e22;
 }
 
 #products {
